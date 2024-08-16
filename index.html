@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de carrelage</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="manifest" href="./manifest.json">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Calculateur de carrelage</h1>
+        <div class="input-group">
+            <label for="width">Largeur du mur (m)</label>
+            <input type="number" id="width">
+        </div>
+        <div class="input-group">
+            <label for="height">Hauteur du mur (m)</label>
+            <input type="number" id="height">
+        </div>
+        <div class="input-group">
+            <label for="tile-size">Taille des carreaux</label>
+            <select id="tile-size">
+                <option value="0.6,1.2">60x120 cm</option>
+                <option value="1,1">100x100 cm</option>
+                <option value="0.3,0.9">30x90 cm</option>
+                <option value="0.3,0.6">30x60 cm</option>
+                <option value="0.4,1.2">40x120 cm</option>
+
+                <option value="0.6,0.6">60x60 cm</option>
+                <option value="0.2,1.2">20x120 cm</option>
+                <option value="0.22,0.9">22x90 cm</option>
+
+                <option value="0.2,1.22">20x122 cm</option>
+                <option value="1.2,1.2">120x120 cm</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="wastage">Pourcentage de majoration (%)</label>
+            <input type="number" id="wastage" value="5">
+        </div>
+        <div class="input-group">
+            <label for="price-per-sqm">Prix par mètre carré (DHS)</label>
+            <input type="number" id="price-per-sqm" value="0">
+        </div>
+        <button onclick="calculateTiles()">Calculer</button>
+        <div id="result"></div>
+        <div id="total-cost"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
