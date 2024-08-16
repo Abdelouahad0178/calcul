@@ -1,0 +1,29 @@
+{
+    "short_name": "MAISON CARRELAGE",
+    "name": "MAISON CARRELAGE TASSILA AGADIR",
+    "display": "standalone",
+    
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "index.html",
+    "splash_pages": null,
+
+    "icons": [
+        {
+            "src": "/images/CALCUL.png",
+            "sizes": "256x256",
+            "type": "images/png"
+            
+        },
+        {
+            "src": "/images/CALCUL.png",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "maskable"
+            
+        }
+       
+
+
+    ]
+}
